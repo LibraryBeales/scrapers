@@ -1,0 +1,36 @@
+
+#Paste into middlewares.py
+
+import random
+from .settings import USERAGENTS
+
+
+class ShowHeadersMiddleware:
+    def process_request(self, request, spider)
+        print(f"Request Headers: {request.headers}")
+
+    def process_response(self, request, response, spider):
+        print(f"Response Headers: {response.headers}")
+        return response
+
+class RotateUserAgentMiddleWare:
+    def process_request(self, request, spider):
+        user_agent = random.choice(USERAGENTS)
+        request.headers['User-Agent'] = user_agent
+
+
+#Paste into settings.py under DOWNLOADER_MIDDLEWARES
+'PROJECTNAME.middlewares.RotateUserAgentMiddleWare': 535,
+'PROJECTNAME.middlewares.ShowHeadersMiddleware': 540,
+
+
+#Paste into settings.py at the bottom
+USERAGENTS = [
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9',
+    'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36',
+    'Mozilla/5.0 (X11; CrOS x86_64 8172.45.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.64 Safari/537.36'
+]
+
+#Uncomment the Download_delay in settings.py
+DOWNLOAD_DELAY = 2
