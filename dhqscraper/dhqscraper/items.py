@@ -22,4 +22,3 @@ class DhqscraperItem(scrapy.Item):
     xmllink = scrapy.Field()
     pass
 
-#abcabcabc
