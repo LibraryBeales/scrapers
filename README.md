@@ -1,7 +1,8 @@
-# journalscrape
-A growing toolkit for scraping open source journals.
+# Scrapers
+A growing toolkit for scraping.
 
 # DHQ Scraper
+An example of scraping open source journals.
 
 Scraping Digital Humanities Quarterly for:
   - Title
@@ -11,3 +12,6 @@ Scraping Digital Humanities Quarterly for:
   - Link to XML
   
 To Do: Move data cleaning to itemloader and setup pipeline for saving .xml files.
+
+#Discord Scraper
+A bot!
