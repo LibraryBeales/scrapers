@@ -13,5 +13,5 @@ Scraping Digital Humanities Quarterly for:
   
 To Do: Move data cleaning to itemloader and setup pipeline for saving .xml files.
 
-#Discord Scraper
+# Discord Scraper
 A bot!
