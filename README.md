@@ -15,3 +15,12 @@ To Do: Move data cleaning to itemloader and setup pipeline for saving .xml files
 
 # Discord Scraper
 A bot!
+
+# Reviews Scraper
+For science!
+
+# Mastodon Scraper
+For science!
+
+# Finance Scraper
+For science!
