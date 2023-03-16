@@ -1,3 +1,2 @@
 Must have access to a discord server
 Must be aware of discords scraper guidelines
-Must test
