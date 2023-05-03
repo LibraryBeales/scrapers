@@ -2,7 +2,7 @@
 A growing toolkit for scraping.
 
 # DHQ Scraper
-This is an example project for scraping content from open journals.  Using scrapy we capture the following info from Digital Humanities Quarterly.
+This is an example project for scraping content from open journals.  Using scrapy we capture the following info from Digital Humanities Quarterly in a csv file ans well as the full text as XML.  
 
   - Title
   - Author(s)
