@@ -18,7 +18,9 @@ class DhqscraperItem(scrapy.Item):
     # define the fields for your item here like:
     title = scrapy.Field()
     author = scrapy.Field()
-    pubinfo = scrapy.Field()
-    xmllink = scrapy.Field()
-    pass
+    year = scrapy.Field()
+    volume = scrapy.Field()
+    file_urls = scrapy.Field()
+    files = scrapy.Field
+    #original_file_name = scrapy.Field()
 
