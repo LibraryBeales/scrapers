@@ -5,17 +5,10 @@
 
 
 # useful for handling different item types with a single interface
-from itemadapter import ItemAdapter
-'''import sqlite3
+'''from scrapy.pipelines.files import FilesPipeline
 
-class DhqscraperPipeline:
-    def __init__(self):
-        self.con = sqlite3.connect('dhqdb')
-        self.cur = self.con.cursor()
+class DHQScraperPipelines(FilesPipeline):
+    def file_path(self, request, response=None, *, item=None):
+        return item.get['title']+'.xml'
         
-    def create_table(self):
-            
-      
-    def process_item(self, item, spider):
-        return item
 '''

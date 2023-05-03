@@ -1,3 +1,16 @@
+
+BOT_NAME = 'dhqscraper'
+
+SPIDER_MODULES = ['dhqscraper.spiders']
+NEWSPIDER_MODULE = 'dhqscraper.spiders'
+ROBOTSTXT_OBEY = True
+
+ITEM_PIPELINES = {'scrapy.pipelines.files.FilesPipeline': 1}#{'dhqscraper.pipelines.DHQScraperPipelines':1}
+#{'scrapy.pipelines.files.FilesPipeline': 1}
+FILES_STORE = 'downloaded_xmls'
+
+FEED_EXPORT_FIELDS = ["title", "author", "year", "volume", "file_urls"]
+
 # Scrapy settings for dhqscraper project
 #
 # For simplicity, this file contains only settings considered important or
@@ -7,20 +20,11 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'dhqscraper'
-
-SPIDER_MODULES = ['dhqscraper.spiders']
-NEWSPIDER_MODULE = 'dhqscraper.spiders'
-
-
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'dhqscraper (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
 
-ITEM_PIPELINES = {'scrapy.pipelines.files.FilesPipeline': 1}
-FILES_STORE = 'downloaded_xmls'
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
