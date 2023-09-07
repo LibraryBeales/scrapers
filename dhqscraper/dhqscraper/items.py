@@ -12,7 +12,7 @@ import re
 def remove_multispaces(value):
     return re.sub.value.strip()    
 #.replace('\n', ' ').replace('\t','')
-
+# 12341234
 class DhqscraperItem(scrapy.Item):
     # define the fields for your item here like:
     title = scrapy.Field()
